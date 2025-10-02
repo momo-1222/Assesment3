@@ -12,6 +12,7 @@ And a lot more too.
 17/09/25:
   - Portfolio was started
   - Github README progress
+
 21/10/2025:
   - Github README finished
 
