@@ -13,6 +13,6 @@ And a lot more too.
   - Portfolio was started
   - Github README progress
 
-21/10/2025:
+02/10/2025:
   - Github README finished
 
