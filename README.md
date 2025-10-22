@@ -16,3 +16,6 @@ And a lot more too.
 13/10/2025:
   - Github README finished
 
+22/10/2025:
+  - Home base section code finished
+  - Comments were added to let both teammates know where to paste their code according to section
