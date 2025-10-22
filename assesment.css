@@ -1,11 +1,64 @@
-canvas#homeCanvas {
+.hidden {
+    display: none;
+}
+
+#home {
     background-color: rgb(233, 212, 189);
     height: 100vh;
     width: 100vw;
 }
 
+#diet {
+    background-color:rgb(222, 245, 196);
+    height: 100vh;
+    width: 100vw;
+}
+
 .menu {
+    background-color:rgba(161, 204, 204, 0);
     position: absolute;
-    top: 0;
+    top:10px;
+    left:10px;
+    border: 0;
+}
+
+.profile {
+    background-color:rgb(169, 223, 223, 0);
+    position: absolute;
+    top:10px;
+    right:10px;
+    border: 2px;
+}
+
+.sectionNav {
+    position:fixed;
+    bottom: 0;
     left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.460);
+}
+
+.s1 {
+    background-color:rgb(169, 223, 223, 0);
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    border: 0; 
+}
+
+.s2 {
+    background-color:rgb(169, 223, 223, 0);
+    position: absolute;
+    bottom:10px;
+    left: 50%;
+    border: 0; 
+}
+
+.s3 {
+    background-color:rgb(169, 223, 223, 0);
+    position: absolute;
+    bottom:10px;
+    right:10px;
+    border: 0; 
 }
