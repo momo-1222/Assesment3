@@ -19,3 +19,6 @@ And a lot more too.
 22/10/2025:
   - Home base section code finished
   - Comments were added to let both teammates know where to paste their code according to section
+
+23/10/2025:
+  - Diet section base code finished
