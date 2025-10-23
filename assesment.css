@@ -30,6 +30,15 @@
     border: 2px;
 }
 
+.title {
+    color:rgba(134, 111, 87);
+    text-align: center;
+    position:absolute;
+    top:0;
+    left: 46%;
+    outline: 2px;
+}
+
 .sectionNavB {
     position:fixed;
     bottom: 0;
@@ -89,3 +98,4 @@
     right:10px;
     border: 0; 
 }
+
