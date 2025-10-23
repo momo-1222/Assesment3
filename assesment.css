@@ -30,13 +30,40 @@
     border: 2px;
 }
 
-.sectionNav {
+.sectionNavB {
     position:fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.460);
+    background-color: rgba(134, 111, 87);
+}
+
+.sectionNavG {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(110, 148, 102);
+}
+
+.sectionNavBl {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(161, 202, 237);
+}
+
+.sectionNavR {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(215, 122, 122);
 }
 
 .s1 {
