@@ -14,6 +14,12 @@
     width: 100vw;
 }
 
+#exercise {
+    background-color:rgb(203, 231, 254);
+    height: 100vh;
+    width: 100vw;
+}
+
 .menu {
     background-color:rgba(161, 204, 204, 0);
     position: absolute;
@@ -35,8 +41,57 @@
     text-align: center;
     position:absolute;
     top:0;
-    left: 46%;
+    left: 50%;
+    transform: translateX(-50%);
     outline: 2px;
+}
+
+#greetingHome {
+    background-color: rgba(134, 111, 87);
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+    padding:15px;
+    border-radius: 32%;
+    color:rgb(255, 255, 255);
+}
+
+#greetingDiet {
+    background-color: rgba(110, 148, 102);
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+    padding:15px;
+    border-radius: 32%;
+    color:rgb(255, 255, 255);
+}
+
+#greetingExercise {
+    background-color: rgba(161, 202, 237);
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+    padding:15px;
+    border-radius: 32%;
+    color:rgb(255, 255, 255);
+}
+
+#greetingSelfcare {
+    background-color: rgba(215, 122, 122);
+    top:15%;
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center;
+    position: absolute;
+    padding:15px;
+    border-radius: 32%;
+    color:rgb(255, 255, 255);
 }
 
 .sectionNavB {
@@ -98,4 +153,3 @@
     right:10px;
     border: 0; 
 }
-
