@@ -23,3 +23,7 @@ And a lot more too.
 23/10/2025:
   - Diet section base code finished
   - Home section code progress
+
+29/10/2025:
+  - most sections' base codes finished
+  - Javascript started
