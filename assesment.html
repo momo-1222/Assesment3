@@ -26,20 +26,19 @@
 
             <div id="reccomendations">
                 <h3>Reccomendations</h3>
-                <button id="walkingR" style="width: 50%; margin-right: 40%;">
-                    <h3>Walking</h3>
-                    <p>Want a quick mindful walk with the nature out there? Try taking a walk!</p>
-                </button>
+                <center> 
+                    <button id="walkingR" style="width: 90%; margin-right: 50%; transform: translateX(5%);">
+                        <h3>Walking</h3>
+                        <p>Want a quick mindful walk with the nature out there? Try taking a walk!</p>
+                    </button>
+                </center>
                 <br>
-                <button id="joggingR" style="width: 50%; margin-right: 40%;">
-                    <h3>Jogging</h3>
-                    <p>Need exercise, in the mood to run, but dont got the energy? Try having a jog!</p>
-                </button>
-
-                <button id="dancingR" style="width: 34%; height: 160px; margin-left: 55%;">
-                    <h3>Dancing</h3>
-                    <p>its fun.</p>
-                </button>
+                <center>
+                    <button id="joggingR" style="width: 90%; margin-right: 40%; transform: translateX(5%);">
+                        <h3>Jogging</h3>
+                        <p>Need exercise, in the mood to run, but dont got energy? Try having a jog</p>
+                    </button>
+                </center>
             </div>
 
             <div id="section1" class="sectionNavB"> 
@@ -75,7 +74,11 @@
                 <h1 id="userName">(User name)!</h1>
             </div>
 
-            <button id="exerciseNow" class="exerciseButtons">Exercise now</button>
+            <button id="exerciseNow" class="exerciseButtons" style="top:46%;">Exercise now</button>
+            <button id="pastActivity" class="exerciseButtons" style="bottom:30%;">Past activity</button>
+            <div id="exerciseStreak" class="exerciseButtons" style="bottom:13%; width:35%;">
+                <h2>Streak!</h2>
+            </div>
 
             <div id="section3" class="sectionNavBl"> 
                 <button id="homeSec1" class="s2">
@@ -88,6 +91,70 @@
                     <img src="https://freesvg.org/img/heart-15.png" alt="self care" width="30" height="30">
                 </button>
             </div>
+        </div>
+
+        <!--choosing exercise section-->
+        <div id="exercise1" class="hidden page"> <!--class hidden so it doesn't show with home-->
+            <h1 id="title4" class="title">BodyWise</h1>
+
+            <div id="pickAnExercise" class="exerciseButtons" style="top:15%">
+                <h3>Pick an exercise!</h3>
+            </div>
+
+            <button id="back" style="right: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+
+            <button id="walkingButton" style="background-color: rgba(161, 202, 237); left: 35%; top:35%; position: absolute;">
+                <img src="https://cdn-icons-png.flaticon.com/512/10/10624.png" alt="walking" width="80" height="80">
+            </button>
+
+            <button id="joggingButton" style="background-color: rgba(161, 202, 237); left: 49%; top:35%; position: absolute;">
+                <img src="https://static.thenounproject.com/png/2998516-200.png" alt="jogging" width="80" height="80">
+            </button>
+
+            <button id="swimmingButton" style="background-color: rgba(161, 202, 237); right: 30%; top:35%; position: absolute;">
+                <img src="https://www.iconpacks.net/icons/2/free-swimming-icon-3221-thumb.png" alt="swimming" width="80" height="80">
+            </button>
+
+            <button id="pushupsButton" style="background-color: rgba(161, 202, 237); left: 35%; bottom:25%; position: absolute;">
+                <img src="https://cdn-icons-png.flaticon.com/512/76/76861.png" alt="pushups" width="80" height="80">
+            </button>
+
+            <button id="dancingButton" style="background-color: rgba(161, 202, 237); left: 49%; bottom:25%; position: absolute;">
+                <img src="https://cdn-icons-png.flaticon.com/512/6335/6335552.png" alt="dancing" width="80" height="80">
+            </button>
+
+            <button id="otherButton" style="background-color: rgba(161, 202, 237); right:30%; bottom:25%; position: absolute;">
+                <img src="https://cdn-icons-png.flaticon.com/512/5895/5895032.png" alt="other" width="80" height="80">
+            </button>
+
+            <div id="section5" class="sectionNavBl"> 
+                <button id="homeSec3" class="s2">
+                    <img src="https://cdn-icons-png.flaticon.com/256/25/25694.png" alt="home" width="30" height="30">
+                </button>
+                <button id="selfcareSec3" class="s3">
+                    <img src="https://freesvg.org/img/heart-15.png" alt="selfcare" width="30" height="30">
+                </button>
+                <button id="dietSec3" class="s1">
+                    <img src="https://cdn-icons-png.flaticon.com/512/123/123427.png" alt="diet" width="30" height="30">
+                </button>
+            </div>
+        </div>
+
+        <!--exercise timer section-->
+        <div id="exercises" class="hidden page">
+            <h1 id="title5" class="title">BodyWise</h1>
+
+            <img src="C:\Users\Kisho\Pictures\Screenshots\walking.png" alt="walking" id="walking" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+            <img src="C:\Users\Kisho\Pictures\Screenshots\jogging.png" alt="jogging" id="jogging" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+            <img src="C:\Users\Kisho\Pictures\Screenshots\swimming.png" alt="swimming" id="swimming" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+            <img src="C:\Users\Kisho\Pictures\Screenshots\pushups.png" alt="pushups" id="pushups" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+            <img src="C:\Users\Kisho\Pictures\Screenshots\dancing.png" alt="walking" id="dancing" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+            <img src="C:\Users\Kisho\Pictures\Screenshots\other.png" alt="walking" id="other" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
+
+            <button id="start" class="exerciseButtons" style="bottom:13%; left:50%">Start</button>
+            <button id="back" class="exerciseButtons" style="bottom:2%; left:50%">Back</button>
         </div>
 
         <!--diet section-->
@@ -111,7 +178,7 @@
 
             <div id="dietDIV">
                 <img src="C:\Users\Kisho\Pictures\Screenshots\bear.png" alt="bear.png" width="50%" height="67%">
-                <p>This section’s still under progress! Come back later.</p>
+                <p>This sections still under progress! Come back later.</p>
             </div>
 
             <div id="section2" class="sectionNavG"> 
