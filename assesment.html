@@ -1,11 +1,21 @@
+<!--Line 162-->
+
 <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="assesment.css">
     </head>
     <body>
+        <!--User Details-->
+        <div id="nameUser" class="page">
+            <img src="c:\Users\kisho\Pictures\Screenshots\bearbear.png" alt="image" height="50%" style="left:50%; transform: translateX(-50%); position: absolute;">
+            <h1 style="top:50%; left:50%; transform: translateX(-50%); position: absolute;">Before you use the app, Please enter:</h1>
+            <label style="top:67%; left:50%; transform: translateX(-50%); position: absolute;">Your Name: <input id="nameInput"> </label>
+            <button id="button1" style="top:76%; left:50%; transform: translateX(-50%); position: absolute;">Continue</button> 
+        </div>
+
         <!--home section-->
-        <div id="home" class="page"> 
+        <div id="home" class="hidden page"> 
             <button id="menu1" class="menu"> 
                 <!--To navigate to menu-->
                 <img src="https://static.vecteezy.com/system/resources/previews/019/858/703/non_2x/menu-flat-color-outline-icon-free-png.png" alt="menu" width="27" height="27">
@@ -71,7 +81,7 @@
 
             <div id="greetingExercise">
                 <h3>Hello there, </h3>
-                <h1 id="userName">(User name)!</h1>
+                <h1 id="userName1">(User name)!</h1>
             </div>
 
             <button id="exerciseNow" class="exerciseButtons" style="top:46%;">Exercise now</button>
@@ -154,7 +164,43 @@
             <img src="C:\Users\Kisho\Pictures\Screenshots\other.png" alt="walking" id="other" class="hidden" width="310" style="left:50%; top:50%; position:absolute; transform:translate(-50%, -57%);">
 
             <button id="start" class="exerciseButtons" style="bottom:13%; left:50%">Start</button>
-            <button id="back" class="exerciseButtons" style="bottom:2%; left:50%">Back</button>
+            <button id="backE" class="exerciseButtons" style="bottom:2%; left:50%">Back</button>
+        </div>
+
+        <!--exercise timer set section-->
+        <div id="timerSetE" class="hidden page" style="top:0; left:0; height:100vh; width:100vw; position: absolute; background-color: rgb(203, 231, 254);">
+            <h1 style="top:20%; left:50%; transform: translateX(-50%); position: absolute;">Timer Length:</h1>
+            <h1 id="timeLength" style="top:35%; left:50%; transform: translate(-50%, -50%); position: absolute; font-size: 120px;">00</h1>
+            <label style="bottom:20%; left:50%; transform: translateX(-50%); position: absolute;">
+                Enter here (seconds):
+                <input id="timeInput" type="number" min="0" max="100">
+            </label>
+            <button id="startTimer" class="exerciseButtons" style="bottom:7%; position: absolute;">Start</button>
+            <button id="backTimer" style="right: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <!--timer start section-->
+        <div id="exerciseTimer" class="hidden page" style="top:0; left:0; height:100vh; width:100vw; position: absolute; background-color: rgb(203, 231, 254);">
+            <h1 style="top:20%; left:50%; transform: translateX(-50%); position: absolute;">Time Left:</h1>
+            <h1 id="timeLeft" style="bottom:43%; left:50%; transform: translateX(-50%); position: absolute; font-size: 70px;">Starting timer...</h1>
+            <button id="timerEnd" class="exerciseButtons hidden" style="bottom:15%">Go Back</button>
+        </div>
+
+        <!--past activity section-->
+        <div id="pastActivitySection" class="hidden page" style="top:0; left:0; height:100vh; width:100vw; position: absolute; background-color: rgb(203, 231, 254);">
+            <h1 style="top:10%; left:50%; transform: translateX(-50%); position: absolute;">Your (5) latest activities (in exercise):</h1>
+            <div style="height:50vh; width: 50vw; top:25%; left:25%; position: absolute; text-align: center; background-color: rgba(161, 202, 237); color:white;">
+                <h3 id="one">1. No activity</h3>
+                <h3 id="two">2. No activity</h3>
+                <h3 id="three">3. No activity</h3>
+                <h3 id="four">4. No activity</h3>
+                <h3 id="five">5. No activity</h3>
+            </div>
+            <button id="backActivity" style="right: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
         </div>
 
         <!--diet section-->
@@ -173,7 +219,7 @@
 
             <div id="greetingDiet">
                 <h3>Hello there, </h3>
-                <h1 id="userName">(User name)!</h1>
+                <h1 id="userName2">(User name)!</h1>
             </div>
 
             <div id="dietDIV">
@@ -210,10 +256,12 @@
 
             <div id="greetingSelfcare">
                 <h3>Hello there, </h3>
-                <h1 id="userName">(User name)!</h1>
+                <h1 id="userName3">(User name)!</h1>
             </div>
 
-            <button id="selfcareIdeas" class="selfcareButtons">Self-care Ideas</button>
+            <button id="selfcareIdeas" class="selfcareButtons" style="top:50%;">Self-care Ideas</button>
+            <button id="breathing" class="selfcareButtons" style="top:65%;">Breathing</button>
+            <button id="helpline" class="selfcareButtons"style="top:80%;">HELP-LINE</button>
 
             <div id="section4" class="sectionNavR"> 
                 <button id="homeSec2" class="s3">
@@ -227,9 +275,183 @@
                 </button>
             </div>
         </div>
+
+        <!--self-care ideas section-->
+        <div id="selfcareIdea" class="hidden page"> <!--class hidden so it doesn't show with home-->
+
+            <!--To navigate to profile-->
+            <button id="profile4" class="profile">
+                <img src="https://static.thenounproject.com/png/638636-200.png" alt="profile" width="30" height="30">
+            </button>
+
+            <h1 id="title4" class="title">BodyWise</h1>
+
+            <div id="self-careIdeas" class="selfcareButtons" style="top:15%">
+                <h3>Self care Ideas</h3>
+            </div>
+
+            <div style="bottom:0; left:20%; height:73%; width:60%; position:absolute; background-color: rgba(215, 122, 122); border-radius: 10%;">
+                <div style="top:6%; left:5%; height:21%; width:90%; position:absolute; background-color: rgba(249, 219, 219); color:black; text-align: center;">
+                    <h3>Start a new Book</h3>
+                    <p>Dying of boredom and have nothing to do? Nothing hits as good as a good book before bed!</p>
+                </div>
+
+                <div style="top:29%; left:5%; height:21%; width:90%; position:absolute; background-color: rgba(249, 219, 219); color:black; text-align: center;">
+                    <h3>Reflections</h3>
+                    <p>Reflect on yor day, your week, your year, your friends, yourself. Anything you feel like talking about!</p>
+                </div>
+
+                <div style="top:53%; left:5%; height:21%; width:90%; position:absolute; background-color: rgba(249, 219, 219); color:black; text-align: center;">
+                    <h3>Start a rant zone  journal!</h3>
+                    <p>Have a lot of feelings you need to let out? Rant zone journals might be pretty perfect for that!</p>
+                </div>
+
+                <div style="top:77%; left:5%; height:21%; width:90%; position:absolute; background-color: rgba(249, 219, 219); color:black; text-align: center;">
+                    <h3>Take a nap!</h3>
+                    <p>Honestly, We all deserve a break! Why not take a resting nap before getting to work again?</p>
+                </div>
+            </div>
+
+            <button id="back1" style="left: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <!--self-care breathing section-->
+        <div id="selfcareBreathe" class="hidden page"> <!--class hidden so it doesn't show with home-->
+            <!--To navigate to profile-->
+            <button id="profile5" class="profile">
+                <img src="https://static.thenounproject.com/png/638636-200.png" alt="profile" width="30" height="30">
+            </button>
+
+            <h1 id="title4" class="title">BodyWise</h1>
+
+            <div class="selfcareButtons" style="top:15%">
+                <h3>Breathing</h3>
+            </div>
+
+            <button id="back2" style="left: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+
+            <h1 style="top:25%; left:50%; transform: translateX(-50%); position: absolute;">Timer Length:</h1>
+            <h1 id="timeLength1" style="top:35%; left:50%; transform: translate(-50%, -50%); position: absolute; font-size: 120px;">00</h1>
+            <label style="bottom:20%; left:50%; transform: translateX(-50%); position: absolute;">
+                Enter here (seconds):
+                <input id="timeInput1" type="number" min="0" max="100">
+            </label>
+            <button id="startTimer1" class="selfcareButtons" style="bottom:7%; position: absolute;">Start</button>
+        </div>
+
+        <!--timer start section-->
+        <div id="selfcareTimer" class="hidden page" style="top:0; left:0; height:100vh; width:100vw; position: absolute; background-color: rgb(249, 219, 219);">
+            <h1 style="top:20%; left:50%; transform: translateX(-50%); position: absolute;">Time Left:</h1>
+            <h1 id="timeLeft1" style="bottom:43%; left:50%; transform: translateX(-50%); position: absolute; font-size: 70px;">Starting timer...</h1>
+            <button id="timerEnd1" class="selfcareButtons hidden" style="bottom:15%">Go Back</button>
+        </div>
+
+        <!--self-care helpline section-->
+        <div id="selfcareHelp" class="hidden page"> <!--class hidden so it doesn't show with home-->
+            <h1 id="title4" class="title">BodyWise</h1>
+
+            <div class="selfcareButtons" style="top:15%">
+                <h3>Helpline</h3>
+            </div>
+
+            <a href="https://www.lifeline.org.au/"> <button class="helplineButtons" style="top:28%"><h1>Lifeline</h1></button> </a>
+            <a href="https://au.reachout.com/"> <button class="helplineButtons" style="top:42%"><h1>Reachout</h1></button> </a>
+            <a href="https://friendline.org.au/"> <button class="helplineButtons" style="top:56%"><h1>Friendline</h1></button> </a>
+            <a href="https://www.beyondblue.org.au/"> <button class="helplineButtons" style="top:70%"><h1>Beyond Blue</h1></button> </a>
+            <a href="https://kidshelpline.com.au/"> <button class="helplineButtons" style="top:84%"><h1>Kids Helpline</h1></button> </a>
+
+            <button id="back3" style="left: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <div id="menuPage" class="hidden page" style="background-color:  rgba(134, 111, 87); color:white; height: 100vh; width: 100vw; top:0; left:0; position: absolute;">
+            <h2 style="left:50%; top:5%; position: absolute; transform: translateX(-50%);">Main menu</h2>
+            <button id="exerciseMenu" class="menuButtons" style="top:20%">Exercise</button>
+            <button id="dietMenu" class="menuButtons" style="top:34%">Diet</button>
+            <button id="selfcareMenu" class="menuButtons" style="top:48%">Self Care</button>
+            <button id="howtouse" class="menuButtons" style="top:62%">how To Use</button>
+            <button id="tnc" class="menuButtons" style="top:76%">Terms & Conditions</button> <!--tnc stands for terms and conditions-->
+            <button id="settings" class="menuButtons" style="top:90%">Settings</button>
+            <button id="menuinmenu" class="menu"> 
+                <!--To navigate to menu-->
+                <img src="https://static.vecteezy.com/system/resources/previews/019/858/703/non_2x/menu-flat-color-outline-icon-free-png.png" alt="menu" width="27" height="27">
+                <!--REMINDER: download picture if link not possible-->
+            </button>
+        </div>
+
+        <div id="terms" class="hidden page" style="background-color: rgb(235, 235, 235); top:0; left:0; height:100vh; width: 100vw; position: absolute;">
+            <h2>Terms and Conditions</h2>
+            <p>Welcome to BodyWise. We appreciate your choice of choosing our app to improve yourself. We also encourage you, and wish you the best with your journey. For you to use this app, you need to accept our terms and conditions.</p>
+            <h3>1. Use of our services</h3>
+            <p>By using BodyWise, you agree to:
+                <ul>
+                <li>Using the app responsibly and respectfully</li>
+                <li>Using the app for personal uses only, unless received perms from an admin</li>
+                <li>Not causing harm to anyone, at least intentionally using the app</li>
+                <li>Not spamming/ doing anything that could crash the app</li>
+                <li>Not impersonating anyone</li>
+                </ul>
+            </p>
+            <h3>2. Privacy and security</h3>
+            <p>You must be responsible while using the app. Hence, we will not be blamed for your loss of:
+                <ul>
+                <li>login information</li>
+                <li>User credentials</li>
+                <li>User past data</li>
+                </ul>
+                *Do note, that this applies only when the user can not get their account or required data back. As the admins, we will make sure to provide the user with as much back up as we can.
+            </p>
+            <h3>3. Disclaimer</h3>
+            <p>Please note that what you do in the app is something you take full responsibility of. If you decide to perform an exercise you physically aren’t able to, It will not be at our fault for the cause of any of your injuries. If you happen to have a disability, we recommend you use exercises that are easier for you.</p>
+            <div style="background-color: white; height:20%; width:40%; top:20%; left:50%; position: absolute;">
+                <label style="left:50%; position: absolute; font-family: 'Times New Roman', Times, serif; transform: translateX(-50%);"><h1>Agree to Terms: <input id="checkboxT" type="checkbox" style="zoom:2;"></h1></label>
+            </div>
+
+            <button id="backTerms" style="right: 0; top:0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <div id="htu" class="hidden page" style="background-color: rgb(235, 235, 235); top:0; left:0; height:100vh; width: 100vw; position: absolute;">
+            <h1 class="title">BodyWise</h1>
+            <div style="top:10%; left:5%; right:5%; position: absolute;">
+                <h2>How to Use</h2>
+                <h3>Exercise</h3>
+                <p>This section is made for your exercising to be much easier! It has a bar at the bottom showing your streak to keep you motivated. Clicking on your past activity would show you what you have done before. Clicking on “exercise now” will take you to a page asking for the exercise you want to perform, and when you click on one, you get an option to start. When you start, your timer begins so you can track your exercise time!</p>
+                <h3>Self Care</h3>
+                <p>This section is made for you to keep in track of your mental well being. There’s a small quote at the bottom to remind you this is NOT selfish at all! Clicking on “selfcare ideas” will take you to a page suggesting a couple ideas. Clicking on “breathing” (in case you feel anxious) will give you instructions on how to breathe (to calm down) and clicking start will start the timer. In case youre feeling really down, we added a helpline section so you can talk to someone.</p>
+                <h3>Diet</h3>
+                <p>Well, this sections still under progress so dont worry about it!</p>
+            </div>
+            <button id="goHome" class="exerciseButtons" style="background-color: black; bottom:10%;">Go Home</button>
+            <button id="backHtu" style="right: 0; top:0;  position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <div id="settingsPage" class="hidden page" style="background-color: rgb(235, 235, 235); top:0; left:0; height:100vh; width: 100vw; position: absolute;">
+            <h1 class="title">BodyWise</h1>
+            <img src="https://cdn-icons-png.freepik.com/512/8742/8742495.png" alt="pfp" width="250" height="250" style="position: absolute; top:20%; left:40%; transform: translateX(-60%);">
+            <h1 id="userName4" style="top:25%; left: 50%; position: absolute;">Username</h1>
+            <button id="editProfile" style="background-color: black; color:white; left:50%; top:40%; position: absolute;">✎ Edit Detials</button>
+
+            <button id="backSettings" style="left: 0; position: absolute; background-color: rgba(0, 0, 0, 0); border:0;">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/arrow-direction/back-arrow-icon.png" alt="back" height="30" width="30">
+            </button>
+        </div>
+
+        <div id="pageTY" class="hidden page" style="background-color: rgb(221, 221, 221); top:0; left:0; height:100vh; width: 100vw; position: absolute;">
+            <h1 style="top:5%; left:50%; transform: translateX(-50%); position: absolute;">Thank you</h1>
+            <h3 style="top:20%; left:50%; transform:translateX(-50%); position: absolute;">For accepting our Terms and Conditions</h3>
+            <img src="c:\Users\kisho\Pictures\Screenshots\beabearbear.png" alt="image" height="45%" style="bottom:25%; left:50%; transform: translateX(-50%); position: absolute;;">
+            <button id="goHome1" class="exerciseButtons" style="background-color: black; bottom:10%;">Go Home</button>
+        </div>
         
         <script src="assesment.js"></script>
     </body>
 </html>
-
-
