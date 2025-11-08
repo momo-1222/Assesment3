@@ -27,3 +27,7 @@ And a lot more too.
 29/10/2025:
   - most sections' base codes finished
   - Javascript started
+
+08/11/2025:
+  - Final code finished
+  - Required to add additional comments + any other finalising later
