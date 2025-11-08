@@ -3,36 +3,81 @@
 }
 
 #home {
+    top:0;
+    left:0;
+    position: absolute;
     background-color: rgb(233, 212, 189);
     height: 100vh;
     width: 100vw;
 }
 
 #diet {
+    top:0;
+    left:0;
+    position: absolute;
     background-color:rgb(222, 245, 196);
     height: 100vh;
     width: 100vw;
 }
 
 #exercise {
+    top:0;
+    left:0;
+    position: absolute;
     background-color:rgb(203, 231, 254);
     height: 100vh;
     width: 100vw;
 }
 
 #exercise1 {
+    top:0;
+    left:0;
+    position: absolute;
     background-color:rgb(203, 231, 254);
     height: 100vh;
     width: 100vw;
 }
 
 #exercises {
+    top:0;
+    left:0;
+    position: absolute;
     background-color:rgb(203, 231, 254);
     height: 100vh;
     width: 100vw;
 }
 
+#selfcareIdea {
+    top:0;
+    left:0;
+    position: absolute;
+    background-color:rgb(249, 219, 219);
+    height: 100vh;
+    width: 100vw;
+}
+
 #selfcare {
+    top:0;
+    left:0;
+    position: absolute;
+    background-color:rgb(249, 219, 219);
+    height: 100vh;
+    width: 100vw;
+}
+
+#selfcareHelp {
+    top:0;
+    left:0;
+    position: absolute;
+    background-color:rgb(249, 219, 219);
+    height: 100vh;
+    width: 100vw;
+}
+
+#selfcareBreathe {
+    top:0;
+    left:0;
+    position: absolute;
     background-color:rgb(249, 219, 219);
     height: 100vh;
     width: 100vw;
@@ -223,7 +268,29 @@
     height: 10%;
     width: 200px;
     color: white;
-    top:50%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.menuButtons {
+    background-color: rgba(233, 212, 189, 0.200);
+    border:0;
+    text-align: center;
+    position: absolute;
+    height: 11%;
+    width: 80%;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.helplineButtons {
+    background-color: rgba(215, 122, 122);
+    border-radius: 3%;
+    text-align: center;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    color: white;
+    width:60%;
 }
